@@ -29,6 +29,9 @@ const Header = (): JSX.Element => {
           <li>
             <Link to="/about/member">멤버</Link>
           </li>
+          <li>
+            <Link to="/about/etc">ETC</Link>
+          </li>
         </ul>
       </nav>
     </>

@@ -22,9 +22,19 @@ const Router = () => {
           <Route path="/test" element={<Test />} />
           <Route path="/detail" element={<Detail />} />
 
-          <Route path="/about" element={<About />} />
-          <Route path="/about/location" element={<Location />} />
-          <Route path="/about/member" element={<Member />} />
+          <Route path="/about" element={<About />}>
+            <Route path="location" element={<Location />} />
+            <Route path="member" element={<Member />} />
+            <Route
+              path="etc"
+              element={
+                <div>
+                  <h2>Elete Touren Chief</h2>
+                  <img src="https://i.namu.wiki/i/IzoZXMKO-O7XTeq1l0FqwGx5auR-TAZ8JCJ1xast7eSFXCL6FI9bKr5eMfX5aSutMfPwo0cVnRlexSCFJnk7qQ.webp" alt="정예 타우렌 족장" />
+                </div>
+              }
+            />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
